@@ -7,9 +7,9 @@ const newGeneration = document.getElementById('btn')
 
 // aggiungo tutto all'interno di una funzione 
 function newEmail() {
-    
+
     emailListEl.innerHTML = '';
-    
+
     // creo un ciclo for per generarmi 10 email differenti 
     for (let i = 0; i < 10; i++) {
 
@@ -40,3 +40,48 @@ newGeneration.addEventListener('click', function () {
     newEmail()
 })
 
+
+
+// ------------------------------------------------------------
+
+
+
+
+// with AXIOS 
+/* 
+
+function newEmail() {
+
+    emailListEl.innerHTML = '';
+
+    // creo un ciclo for per generarmi 10 email differenti 
+    for (let i = 0; i < 10; i++) {
+
+        // recupero il dato API che mi interressa axios (external library)
+        axios.get(endpoint)
+            .then(email => {
+                console.log(email.data.response);
+
+                const emailAxios = email.data.response
+
+                // creo il list item
+                const li = document.createElement('li');
+                // inserisco nel list item le email 
+                li.textContent = emailAxios;
+                // aggiungo i list item dentro la lista creata precedentemente
+                emailListEl.appendChild(li)
+            })
+
+
+    }
+
+}
+
+
+newEmail()
+// assegno al bottone l'evento in modo da generare nuove email al click
+newGeneration.addEventListener('click', function () {
+    newEmail()
+})
+ 
+*/
