@@ -9,11 +9,23 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body class="bg-warning">
+<body class="bg-dark">
+
     <!-- Header -->
-    <div class="container text-center mb-3">
-        <h1 class="text-danger fw-bold">Email List</h1>
-    </div>
+    <header class="py-5">
+        <div class="container d-flex justify-content-center">
+
+            <div class="p-4 rounded-4 shadow-sm bg-white text-center">
+                <h1 class="fw-bold display-6 text-danger mb-3">
+                    Email Generator
+                </h1>
+                <p class="text-secondary mb-0">
+                    Generate 10 random email addresses instantly
+                </p>
+            </div>
+
+        </div>
+    </header>
 
     <!-- Main -->
     <main>
@@ -25,9 +37,15 @@
                 </ul>
             </div>
         </div>
+        <div class="d-flex justify-content-center mt-4">
+            <button id="btn" class="btn btn-outline-primary btn-lg">
+                🚀  Genera nuove email
+            </button>
+        </div>
+
     </main>
 
-
+    
     <script src="main.js"></script>
 </body>
 
